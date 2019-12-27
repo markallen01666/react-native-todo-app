@@ -6,16 +6,16 @@ import { View, StyleSheet, Button } from "react-native";
 
 const ClearButton = props => {
   return (
-    <View style={styles.clearButton}>
-      <Button color="#ff0000" title="CLEAR" onPress={props.onClearItems} />
+    <View style={styles.clearButtonView}>
+      <Button color="#cc2900" title="CLEAR ALL" onPress={props.onClearItems} />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  clearButton: {
+  clearButtonView: {
     marginTop: 5,
-    marginBottom: 20
+    marginBottom: 5,
   }
 });
 
