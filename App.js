@@ -31,6 +31,7 @@ export default function App() {
       <Text style={styles.title}>To Do List</Text>
       <Text style={styles.instructions}>(long press on item to delete)</Text>
       <TodoAdd onAddItem={addItemHandler} />
+      <ClearButton onClearItems={clearItemsHandler} />
       <View style={styles.itemlist}>
         <FlatList
           data={todoItems}
@@ -43,7 +44,6 @@ export default function App() {
           )}
         />
       </View>
-      <ClearButton onClearItems={clearItemsHandler} />
     </View>
   );
 }

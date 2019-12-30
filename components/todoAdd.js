@@ -24,6 +24,9 @@ const todoAdd = props => {
         style={styles.input}
         onChangeText={todoFieldHandler}
         value={enteredItem}
+        onSubmitEditing={()=>{
+          todoAddHandler();
+        }}
       />
       <Button color="#0066cc" title="ADD" onPress={todoAddHandler} />
     </View>
